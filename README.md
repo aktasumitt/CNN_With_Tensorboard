@@ -20,13 +20,12 @@ TensorBoard, along with saving training or prediction images, allows you to save
 - I chose Adam optimizer with a learning rate of 0.001 and used CrossEntropyLoss as the loss function. I trained the model for 13 epochs.
 
 ## Results:
-- After 6 epochs, the model achieved approximately 85.5% accuracy on both the training, validation, and test sets, with a loss value of 0.35.
+- After 13 epochs, the model achieved approximately 95% accuracy on the training, approximately 90% accuracy on both validation and test sets.
 
 
 ## Usage: 
+- Firstly, You need to download Dataset from the Dataset link. Then you can copy folder of labels from Dataset into Dataset folder or You can set config.DATASET_PATH as your dataset path. 
 - You can train the model by setting "TRAIN" to "True" in config file and your checkpoint will save in "config.CALLBACKS_PATH"
+- Tensorboard files will created into Tensorboard_Writer folder during training time.
 - Then you can predict the images placed in the Prediction folder by setting the "LOAD" and "PREDICTION" values to "True" in the config file.
-
-
-
 
